@@ -17,3 +17,64 @@
   --h3-font: 2rem;
   --normal-font: 1rem;
 }
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 14%;
+  transition: all 0.35 ease;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 10px 25px;
+  font-size: var(--normal-font);
+  transition: all 0.36s ease;
+}
+
+.navlist a:hover {
+  color: var(--main-color);
+}
+
+.header-icons i {
+  font-size: 32px;
+  color: var(--text-color);
+  margin-right: 20px;
+  transition: all 0.36s ease;
+}
+
+.header-icons i:hover {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 34px;
+  color: var(--text-color);
+  z-index: 10001;
+  margin-right: 20px;
+  display: none;
+}
