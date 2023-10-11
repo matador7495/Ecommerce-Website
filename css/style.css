@@ -284,3 +284,27 @@ header.sticky {
   transform: scale(0.9) translateY(-5px);
   cursor: pointer;
 }
+
+.brand {
+  padding: 50px 14%;
+}
+
+.brand-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.main img:hover {
+  opacity: 1;
+}
