@@ -234,3 +234,53 @@ header.sticky {
   letter-spacing: 0.6rem;
   margin-bottom: 30px;
 }
+
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.3rem;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  transition: all 0.40s ease;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.box h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  transform: scale(0.9) translateY(-5px);
+  cursor: pointer;
+}
